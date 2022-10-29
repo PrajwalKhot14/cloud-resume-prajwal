@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "cloud-resume-prajwal"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-5ui57w085ok9"
+s3_prefix = "cloud-resume-prajwal"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []

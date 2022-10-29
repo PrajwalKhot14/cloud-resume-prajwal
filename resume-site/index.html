@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+    <html lang="en">
+        
+    <head>
+        <script>
+            fetch('https://2ggq2m9ebk.execute-api.us-east-1.amazonaws.com/Prod/put')
+                .then(() => fetch('https://2ggq2m9ebk.execute-api.us-east-1.amazonaws.com/Prod/get'))
+                .then(response => response.json())
+                .then((data) => {
+                    document.getElementById('replaceme').innerText = data.count
+                })
+        </script>
+
+        <!-- <script>
+            fetch('https://projy9eqv7.execute-api.us-east-1.amazonaws.com/Prod/get')
+                .then(response => response.json())
+                .then((data) => {
+                    document.getElementById('replaceme').innerText = data.count
+                })
+        </script> -->
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Prajwal Khot</title>
+        <link rel="icon" type="image/x-icon" href="/assets/img/pk.ico">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Prajwal</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Experience
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+                
+            </nav>
+        </header>
+
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/prajwalkhot/" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+
+                            <a href="https://github.com/PrajwalKhot14" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+
+                            <a href="mailto:khotprajwal04@gmail.com" class="home__social-icon">
+                                <i class="uil uil-envelopes"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="-20" y ="18" href="assets/img/prajwal.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Prajwal Pandit Khot</h1>
+                            <h3 class="home__subtitle">MSCS at University of Illinois at Chicago</h3>
+                            
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__scroll home__scroll-button">
+                        <a href="#about" class="home__scroll-button button--flex ">
+                            <!-- <i class="uil uil-mouse-alt home__scroll-mouse"></i> -->
+                            <!-- <span class="home__scroll-name">Scroll Down</span> -->
+                            <!-- <i class="uil uil-arrow-down"></i> -->
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/aboutme.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <!-- <p class="about__description">Hello, my name is Prajwal Khot. I’m currently pursuing MS in Computer Science at the University of Illinois at Chicago. Before I started my degree at UIC, I worked as a Data Scientist in the FSI Domain. I am currently working as a Graduate research assistant at UIC.</p> -->
+                        <p class="about__description" style="text-align: justify;">I am currently pursuing my Master's in Computer Science at University of Illinois at
+                            Chicago. In my most recent position as a Data Scientist at KEA Data, I excelled at Data
+                            Modeling specifically within time-series forecasting on FSI Data for European clients. I
+                            have significant hands on experience on study of pattern search, trends identification to
+                            enable stock market forecasting using Python, SQL, Data Warehousing. </p>
+                            <p class="about__description" style="text-align: justify;">
+                            I am currently working as a Graduate Research Assistant at UI Health Cancer Center,
+                            part of University of Illinois at Chicago. I am responsible for managing and maintaining
+                            large cohort cancer data and developing dashboards for analytics. I have also
+                            developed a python application to automate generation and broadcasting of newsletters
+                            to doctors across the country.</p>
+                            <p class="about__description" style="text-align: justify;">
+                            I am currently working towards my AWS Solutions Architect Associate certification.</p>
+                    
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/Prajwal.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                        </div>
+                </div>
+            </section>
+
+        
+
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills <i class="uil uil-brackets-curly"></i></h2>
+                <span class="section__subtitle">My skillset</span>
+
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <div>
+                            <h3 class="skills__title">Languages</h3>
+                            <!-- <img src="assets/img/lang.png" alt="" class="language__img"> -->
+                            <!-- <i class="uil uil-web-grid services__icon"></i> -->
+                            <p class="language__description">Python, Go, R, NodeJS, HTML, CSS, JavaScript</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <div>
+                            <h3 class="skills__title">Databases</h3>
+                            <!-- <img src="assets/img/lang.png" alt="" class="language__img"> -->
+                            <!-- <i class="uil uil-web-grid services__icon"></i> -->
+                            <p class="language__description">MySQL, MongoDB, PostgreSQL</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <div>
+                            <h3 class="skills__title">CI/CD</h3>
+                            <!-- <img src="assets/img/lang.png" alt="" class="language__img"> -->
+                            <!-- <i class="uil uil-web-grid services__icon"></i> -->
+                            <p class="language__description">GitHub, Jenkins, AWS CodePipeline</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <div>
+                            <h3 class="skills__title">Serverless Technology</h3>
+                            <!-- <img src="assets/img/lang.png" alt="" class="language__img"> -->
+                            <!-- <i class="uil uil-web-grid services__icon"></i> -->
+                            <p class="language__description">AWS Lambda, AWS ECS, Docker, Amazon DynamoDB, Amazon S3, AWS APIGateway</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My journey</span>
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-monitor qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <div class="qualification__sections">
+                        <div class="qualification__content qualification__active " data-content id="education">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">MS in Computer Science</h3>
+                                    <span class="qualification__subtitle">University of Illinois at Chicago</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021-2023
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Bachelor's of Engineering in Computer Science</h3>
+                                    <span class="qualification__subtitle">CMR Institute of Technology, Bangalore, India</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016-2020
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        
+
+                            <!-- <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">MS in Computer Science</h3>
+                                    <span class="qualification__subtitle">University of Illinois at Chicago</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021-2023
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="qualification__content" data-content id="work">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Graduate Research Assistant</h3>
+                                    <span class="qualification__subtitle">University of Illinois at Chicago</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        March 2022 - Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification__title">Data Scientist</h3>
+                                    <span class="qualification__subtitle">KEA Data Pvt. Ltd.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Nov 2020 – July 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Developer Intern</h3>
+                                    <span class="qualification__subtitle">Edumerge Solutions Pvt. Ltd.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Jan 2020 – March 2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Developer Intern</h3>
+                                    <span class="qualification__subtitle">Eximius Design Pvt. Ltd.</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Aug 2019 – Sept 2019
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+
+
+            
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email ID: </h3>
+                                <span class="contact__subtitle">khotprajwal04@gmail.com </span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Mobile: </h3>
+                                <span class="contact__subtitle">312-284 7613</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location: </h3>
+                                <span class="contact__subtitle">Chicago, IL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form grid" action="https://formsubmit.co/el/kexigo" method="POST">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email ID</label>
+                                <input type="email" class="contact__input">
+                            </div>
+
+                            
+                        </div>
+                        <div class="contact__content">
+                            <label for="message" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input "></textarea>
+                        </div>
+                        <div>
+                            <a>
+                                <button class="button button--flex" type="submit" value="Submit">Send <i class="uil uil-message button__icon"></i></button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Prajwal Pandit Khot</h1>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li> 
+                        <!-- <li>
+                            <p>
+                                Visitors:
+                                <span id="replaceme"></span>
+                            </p>
+                        </li> -->
+                        <li>
+                            <div class="flex">
+                                <p class="footer__api">Viewcount:&nbsp</p>
+                                <span id="replaceme" class="footer__api"></span>
+                            </div>
+                            
+                        </li> 
+                    </ul>
+                    
+                </div>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
